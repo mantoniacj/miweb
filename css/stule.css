@@ -1,0 +1,133 @@
+/* Estilos para la página de inicio */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2D73FF;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav {
+  background-color: #7CA8FE;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.button {
+  background-color: #2D73FF; /* Color de fondo */
+  border: 1px solid #fff; /* Sin borde */
+  color: #fff; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  text-align: center; /* Alinear el texto al centro */
+  display: inline-block; /* Mostrar como elemento en línea */
+  font-size: 16px; /* Tamaño de fuente */
+  margin: 10px 5px; /* Margen exterior */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  border-radius: 10px;
+}
+
+/* Cambiar color de fondo en el hover */
+.button:hover {
+  background-color: #93B7FF;
+}
+
+/* Cambiar color de fondo al hacer clic */
+.button:active {
+  background-color: #93B7FF;
+}
+
+/* Estilos para la página de "Tecnología" */
+.fondotexto {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #D4E1FB;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+li {
+  text-align: justify;
+}
+/* Estilos */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.text {
+  flex: 1;
+  padding: 20px;
+}
+
+.image {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+
+  .contenido {
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .text, .image {
+    flex: 100%;
+    order: unset;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text, .image {
+    flex: 100%;
+    order: unset;
+  }
+}
